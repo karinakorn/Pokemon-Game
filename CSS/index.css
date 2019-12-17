@@ -1,3 +1,11 @@
 body {
     background-image: url("../CSS/Img/Psyduck\ Ganador.jpg");
 }
+
+#Abra {
+    float: right;
+}
+
+#vida-abra {
+    float: right;
+}

@@ -1,20 +1,10 @@
 class Pokemon {
-    constructor (id, alto, ancho, imagen, ataques, debilidad, vidas) {
-      this.id = id;
-      this.alto = alto;
-      this.ancho = ancho;
-      this.imagen = imagen;
-      this.ataques = [ataques]
-      this.debilidad = debilidad;
-      this.vidas = vidas
-    }
-}
-
-class Ataque {
-    constructor (nombre, tipo, potencia, cantidadDeUsos){
-        this.nombre = nombre;
+    constructor(id, imagen, ataques, tipo, debilidad, vidas) {
+        this.id = id;
+        this.imagen = imagen;
+        this.ataques = [ataques];
         this.tipo = tipo;
-        this.potencia = potencia;
-        this.cantidadDeUsos = cantidadDeUsos;
+        this.debilidad = debilidad;
+        this.vidas = vidas;
     }
 }
