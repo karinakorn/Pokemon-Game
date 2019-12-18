@@ -1,11 +1,20 @@
-body {
-    background-image: url("../CSS/Img/Psyduck\ Ganador.jpg");
+body {}
+
+#contenedor-central {
+    height: 240px;
+    width: 640px;
+    background-image: url("Img/Psyduck\ Ganador.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px, solid, black;
 }
 
-#Abra {
+#enemigo {
     float: right;
+    align: top;
 }
 
-#vida-abra {
-    float: right;
+#player {
+    float: left;
+    bottom: 0px;
 }

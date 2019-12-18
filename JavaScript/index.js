@@ -12,3 +12,8 @@ var abra = new Pokemon(01, "https://img.pokemondb.net/sprites/black-white/normal
     "fantasma", 10);
 
 var psyduck = new Pokemon(02, "https://img.pokemondb.net/sprites/black-white/normal/psyduck.png", [psyd, duck], "psiquico", "fantasma", 10)
+
+// JQUERY
+$(document).ready {
+    $(img).hide()
+}
