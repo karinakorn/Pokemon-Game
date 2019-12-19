@@ -1,20 +1,4 @@
-body {}
-
-#contenedor-central {
-    height: 240px;
-    width: 640px;
-    background-image: url("Img/Psyduck\ Ganador.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 4px, solid, black;
-}
-
-#enemigo {
-    float: right;
-    align: top;
-}
-
-#player {
-    float: left;
-    bottom: 0px;
+#main-container {
+    display: flex;
+    border: 1px solid black;
 }

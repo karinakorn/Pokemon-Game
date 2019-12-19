@@ -3,7 +3,7 @@ var psyd = new Ataque("psyd", "psiquico", 3, 5);
 
 
 var dormir = new Ataque("psyd", "psiquico", 3, 5);
-var duck = new Ataque("psyd", "psiquico", 3, 5);
+var duck = new Ataque("duck", "psiquico", 3, 5);
 
 var jugador1 = new Jugador("Player 1", [abra]);
 var enemgio = new Jugador("Gary", [psyduck]);
