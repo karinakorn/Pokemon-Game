@@ -18,9 +18,5 @@ var rayo = new Ataque("rayo", "normal", 300, 5);
 var especial = new Ataque("especial", "normal", 2000, 5);
 
 
-
-
-
-
-var player = new Pokemon(pokemon[0].img["back"], pokemon[0].ataques[0], pokemon[0].propiedades)
-var jugador1 = new Jugador("Player 1", [abra]);
+var dibujante = new Dibujante();
+dibujante.dibujarPokemon();

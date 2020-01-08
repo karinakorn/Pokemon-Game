@@ -9,8 +9,7 @@ class Pokemon {
 
     }
 }
-const listaPokemon = {
-    0: {
+const listaPokemon = [{
         name: "abra",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/abra.png",
@@ -27,7 +26,7 @@ const listaPokemon = {
             vidas: 1000
         },
     },
-    1: {
+    {
         name: "Charmander",
         img: {
             "front": "https://img.pokemondb.net/sprites/heartgold-soulsilver/normal/charmander.png",
@@ -43,7 +42,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    2: {
+    {
         name: "Machop",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/machop.png",
@@ -59,7 +58,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    3: {
+    {
         name: "Lapras",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/lapras.png",
@@ -75,7 +74,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    4: {
+    {
         name: "Pidgey",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/pidgey.png",
@@ -91,7 +90,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    5: {
+    {
         name: "Mankey",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/mankey.png",
@@ -107,7 +106,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    6: {
+    {
         name: "Squirtle",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/squirtle.png",
@@ -123,7 +122,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    7: {
+    {
         name: "Jigglypuff",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/jigglypuff.png",
@@ -139,7 +138,7 @@ const listaPokemon = {
             vidas: 1000
         },
     },
-    8: {
+    {
         name: "Zubat",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/zubat-f.png",
@@ -155,7 +154,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    9: {
+    {
         name: "Geodude",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/geodude.png",
@@ -171,7 +170,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    10: {
+    {
         name: "Gastly",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/gastly.png",
@@ -187,7 +186,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    11: {
+    {
         name: "Mew",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/mew.png",
@@ -203,7 +202,7 @@ const listaPokemon = {
             vidas: 1000
         }
     },
-    12: {
+    {
         name: "Psyduck",
         img: {
             "front": "https://img.pokemondb.net/sprites/black-white/normal/psyduck.png",
@@ -220,4 +219,4 @@ const listaPokemon = {
         }
     }
 
-}
+];
