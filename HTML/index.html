@@ -2,45 +2,68 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/sprites.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <title>Psyduck Pokemon Battle</title>
 </head>
 
 <body>
 
-    <div id="main-container">
-        <div class="enemigo" class="player">
-            <div>
-                <img class="imagen-pokemon" src="https://img.pokemondb.net/sprites/black-white/normal/abra.png" alt="">
+    <li id="main-container">
+        <div id="enemigo" class="player">
+            <div class="imagen-pokemon">
+                <img src="https://img.pokemondb.net/sprites/black-white/normal/abra.png" alt=""> 
+                <!-- querySelector("#enemigo .imagen-pokemon img") -->
             </div>
             <div class="cardbox">
-                <div>
-                    <h3 class="nombre-pokemon">Abra</h3>
-                </div>
-                <div class="vida-barra">
-                    <progress value="22" max="100"></progress>
-                </div>
-            </div>
-
-        </div>
-        <div class="jugador" class="player">
-
-            <div>
-                <img class="imagen-pokemon" src="https://img.pokemondb.net/sprites/black-white/back-normal/psyduck.png" alt="">
-            </div>
-            <div class="menu">
-                <div class="pokemon"><button type="button">Pokemon</button></div>
-                <div class="ataque"><button type="button">Ataque</button></div>
-            </div>
-            <div class="cardbox">
-                <div>
-                    <h3 class="nombre-pokemon">Psyduck</h3>
-                </div>
-                <div class="vida-barra">
-                    <progress value="75" max="100"></progress>
-                </div>
+                <span class="nombre-pokemon">Abra</span>
+                <progress class="vida-barra" value="22" max="100"></progress>
             </div>
         </div>
 
+        <div id="jugador" class="player">
+            <div  class="imagen-pokemon">
+                <img src="https://img.pokemondb.net/sprites/black-white/back-normal/psyduck.png" alt="">
+            </div>
+            <div class="cardbox">
+                  <span class="nombre-pokemon">Psyduck</span>
+                  <progress class="vida-barra" value="75" max="100"></progress>
+            </div>
+        </div>
+        <div id="tablero">  
+            <ul id="menu">
+                <li>
+                    <div id="menu-pokemon" class="drop-menu">
+                        <ul>
+                            <li class="sprite" data-pokemon="Abra"><span>Pikachu</span></li>
+                            <li class="sprite" data-pokemon="Charmander"><span>Abra</span></li>
+                            <li class="sprite" data-pokemon="Machop"><span>Machop</span></li>
+                            <li class="sprite" data-pokemon="Lapras"><span>Gasty</span></li>
+                            <li class="sprite" data-pokemon="Pidgey"><span>Pikachu</span></li>
+                            <li class="sprite" data-pokemon="Mankey"><span>Abra</span></li>
+                            <li class="sprite" data-pokemon="Squirtle"><span>Machop</span></li>
+                            <li class="sprite" data-pokemon="Jigglypuff"><span>Gasty</span></li>
+                            <li class="sprite" data-pokemon="Zubat"><span>Pikachu</span></li>
+                            <li class="sprite" data-pokemon="Geodude"><span>Abra</span></li>
+                            <li class="sprite" data-pokemon="Gastly"><span>Machop</span></li>
+                            <li class="sprite" data-pokemon="Mew"><span>Gasty</span></li>
+                        </ul>
+                    </div>
+                    <a id="elegir-pokemon" href="javascript:void(0);">Pokemon</a>
+                </li>
+               <li>
+                    <div id="menu-ataque" class="drop-menu">
+                        <ul>
+                            <li><span>Ataque 1</span></li>
+                            <li><span>Ataque 2</span></li>
+                        </ul>
+                    </div>
+                    <a id="elegir-ataque" href="javascript:void(0);">Ataque</a>
+
+               </li>
+                
+            </ul>
+        </div>
     </div>
 
     <script src="../JavaScript/Ataque.js"></script>

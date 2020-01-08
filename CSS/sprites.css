@@ -1,4 +1,69 @@
-/*<a href="http://pokemondb.net/pokedex/abra"><img src="https://img.pokemondb.net/sprites/black-white/normal/abra.png" alt="Abra"></a>
+.sprite span {
+    display: none;
+}
+
+.sprite:before {
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+ }
+ 
+ .sprite[data-pokemon*="Abra"]:before {
+    background-image: url("https://img.pokemondb.net/sprites/black-white/normal/abra.png")
+ }
+
+ .sprite[data-pokemon*="Charmander"]:before {
+     background-image: url("https://img.pokemondb.net/sprites/heartgold-soulsilver/normal/charmander.png");
+     
+}
+
+.sprite[data-pokemon*="Machop"]:before {
+    background-image: url("https://img.pokemondb.net/sprites/black-white/normal/machop.png");
+     
+}
+
+.sprite[data-pokemon*="Lapras"]:before {
+    background-image: url("https://img.pokemondb.net/sprites/black-white/normal/lapras.png");    
+}
+
+.sprite[data-pokemon*="Pidgey"]:before {
+     background-image: url("https://img.pokemondb.net/sprites/black-white/normal/pidgey.png");
+}
+
+.sprite[data-pokemon*="Mankey"]:before {
+    background-image: url("https://img.pokemondb.net/sprites/black-white/normal/mankey.png");
+    
+}
+
+.sprite[data-pokemon*="Squirtle"]:before {
+  background-image: url("https://img.pokemondb.net/sprites/black-white/normal/squirtle.png");   
+}
+
+.sprite[data-pokemon*="Jigglypuff"]:before {
+     background-image: url("https://img.pokemondb.net/sprites/black-white/normal/jigglypuff.png");
+}
+
+.sprite[data-pokemon*="Zubat"]:before {
+     background-image: url("https://img.pokemondb.net/sprites/black-white/normal/zubat-f.png");
+}
+
+.sprite[data-pokemon*="Geodude"]:before {
+     background-image: url("https://img.pokemondb.net/sprites/black-white/normal/geodude.png");
+}
+
+.sprite[data-pokemon*="Gastly"]:before {
+    background-image: url("https://img.pokemondb.net/sprites/black-white/normal/gastly.png");
+ }
+
+.sprite[data-pokemon*="Mew"]:before {
+    background-image: url("https://img.pokemondb.net/sprites/black-white/normal/mew.png");     
+}
+
+ 
+ /*<a href="http://pokemondb.net/pokedex/abra"><img src="https://img.pokemondb.net/sprites/black-white/normal/abra.png" alt="Abra"></a>
 <a href="http://pokemondb.net/pokedex/abra"><img src="https://img.pokemondb.net/sprites/black-white/back-normal/abra.png" alt="Abra"></a>
 
 <a href="http://pokemondb.net/pokedex/charmander"><img src="https://img.pokemondb.net/sprites/heartgold-soulsilver/normal/charmander.png" alt="Charmander"></a>
