@@ -202,21 +202,6 @@ const listaPokemon = [{
             vidas: 1000
         }
     },
-    {
-        name: "Psyduck",
-        img: {
-            "front": "https://img.pokemondb.net/sprites/black-white/normal/psyduck.png",
-            "back": "https://img.pokemondb.net/sprites/black-white/back-normal/psyduck.png"
-        },
-        ataques: {
-            0: "especial",
-            1: "placaje",
-        },
-        propriedades: {
-            tipo: "psiquico",
-            debilidad: "null",
-            vidas: 2000
-        }
-    }
+
 
 ];
