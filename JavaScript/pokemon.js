@@ -1,3 +1,28 @@
+/*
+var gameData = {
+    ataques: {
+        lanzallamas: new Ataque("lanzallamas", "fuego", 300, 5),
+        llamarada: new Ataque("llamarada", "fuego", 300, 5),
+        golpePuño: new Ataque("golpePuño", "roca", 300, 5),
+        patada: new Ataque("patada", "normal", 300, 5),
+        rayoHielo: new Ataque("rayoHielo", "hielo", 300, 5),
+        placaje: new Ataque("placaje", "normal", 300, 5),
+        tornado: new Ataque("tornado", "volador", 300, 5),
+        ataqueAla: new Ataque("ataqueAla", "volador", 300, 5),
+        lanzaAgua: new Ataque("lanzaAgua", "agua", 300, 5),
+        burbujas: new Ataque("burbujas", "agua", 300, 5),
+        cantar: new Ataque("cantar", "normal", 300, 5),
+        eco: new Ataque("eco", "volador", 300, 5),
+        pesadilla: new Ataque("pesadilla", "fantasma", 300, 5),
+        asustar: new Ataque("asustar", "fantasma", 300, 5),
+        rayo: new Ataque("rayo", "normal", 300, 5),
+        especial: new Ataque("especial", "normal", 2000, 5),
+        mentalismo: new Ataque("mentalismo", "fantasma", 300, 5),
+        psiquico: new Ataque("psiquico", "psiquico", 300, 5)
+    }
+}
+*/
+
 var lanzallamas = new Ataque("lanzallamas", "fuego", 300, 5);
 var llamarada = new Ataque("llamarada", "fuego", 300, 5);
 var golpePuño = new Ataque("golpePuño", "roca", 300, 5);
@@ -14,6 +39,10 @@ var pesadilla = new Ataque("pesadilla", "fantasma", 300, 5);
 var asustar = new Ataque("asustar", "fantasma", 300, 5);
 var rayo = new Ataque("rayo", "normal", 300, 5);
 var especial = new Ataque("especial", "normal", 2000, 5);
+var mentalismo = new Ataque("mentalismo", "fantasma", 300, 5);
+var psiquico = new Ataque("psiquico", "psiquico", 300, 5);
+
+
 class Pokemon {
     constructor(id, imagen, ataques, tipo, debilidad, vidas) {
         this.id = id;
