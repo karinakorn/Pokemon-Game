@@ -8,7 +8,7 @@ class Controlador {
     pokemonRandom = (min, max) => {
         var pokemonRandom = parseInt(Math.random() * (max - min) + min);
         console.log(pokemonRandom)
-        dibujante.dibujarPokemonRandom(pokemonRandom)
+        return new Pokemon(listaPokemon[pokemonRandom])
     }
 }
 
@@ -28,31 +28,31 @@ function dropMenu(element, hide = false) {
 
 }
 
-document.getElementById("elegir-pokemon").addEventListener("mouseover", function () {
+document.getElementById("elegir-pokemon").addEventListener("mouseover", function() {
     dropMenu("menu-pokemon");
 });
-document.getElementById("elegir-ataque").addEventListener("mouseover", function () {
+document.getElementById("elegir-ataque").addEventListener("mouseover", function() {
     dropMenu("menu-ataque");
 });
 
 var menupoke, menuataq;
 
-document.getElementById("elegir-pokemon").addEventListener("mouseout", function () {
-    menupoke = setTimeout(function () {
+document.getElementById("elegir-pokemon").addEventListener("mouseout", function() {
+    menupoke = setTimeout(function() {
         dropMenu("menu-pokemon", true);
     }, 1000)
 });
 
-document.getElementById("elegir-ataque").addEventListener("mouseout", function () {
-    menuataq = setTimeout(function () {
+document.getElementById("elegir-ataque").addEventListener("mouseout", function() {
+    menuataq = setTimeout(function() {
         dropMenu("menu-ataque", true);
     }, 1000)
 });
 
-document.getElementById("menu-pokemon").addEventListener("mouseenter", function () {
+document.getElementById("menu-pokemon").addEventListener("mouseenter", function() {
     clearTimeout(menupoke);
 });
-document.getElementById("menu-ataque").addEventListener("mouseenter", function () {
+document.getElementById("menu-ataque").addEventListener("mouseenter", function() {
     clearTimeout(menuataq);
 });
 
@@ -67,5 +67,3 @@ document.getElementById("menu-ataque").addEventListener("mouseenter", function (
 //         dropMenu("menu-ataque", true);
 //     }, 1000)
 // });
-
-const _Controlador = new Controlador()
