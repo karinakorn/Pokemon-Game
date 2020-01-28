@@ -2,12 +2,35 @@ class Controlador {
     // constructor(dibujante){
     //     this.dibujante = dibujante
     // }
-    turnos = () => {
+    configurarBotonesAtaque = () => {
+        var ataque1 = $("#atk1");
+        var ataque2 = $("#atk2");
+        var contexto = this;
 
+        ataque1.click(function() {
+            contexto.atacar(0);
+        })
+        ataque2.click(function() {
+            contexto.atacar(1);
+        })
+
+    }
+    atacar = (numeroDeAtaque) => {
+        var ataqueEnemigo = Math.floor(Math.random() * 2)
+        enemigo.vidas -= jugador.ataques[numeroDeAtaque].potencia;
+        jugador.vidas -= enemigo.ataques[numeroDeAtaque].potencia;
+        this.ganar();
+
+    }
+    ganar = () => {
+        if (enemigo.vidas <= 0) {
+            return alert("You win");
+        } else if (jugador.vidas <= 0) {
+            return alert("You loose");
+        }
     }
     pokemonRandom = (min, max) => {
         var pokemonRandom = parseInt(Math.random() * (max - min) + min);
-        console.log(pokemonRandom)
         return new Pokemon(listaPokemon[pokemonRandom])
     }
 }

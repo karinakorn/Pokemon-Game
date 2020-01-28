@@ -1,21 +1,21 @@
-var lanzallamas = new Ataque("lanzallamas", "fuego", 300, 5);
-var llamarada = new Ataque("llamarada", "fuego", 300, 5);
+var lanzallamas = new Ataque("lanzallamas", "fuego", 400, 5);
+var llamarada = new Ataque("llamarada", "fuego", 500, 5);
 var golpePuño = new Ataque("golpePuño", "roca", 300, 5);
-var patada = new Ataque("patada", "normal", 300, 5);
+var patada = new Ataque("patada", "normal", 200, 5);
 var rayoHielo = new Ataque("rayoHielo", "hielo", 300, 5);
 var placaje = new Ataque("placaje", "normal", 300, 5);
-var tornado = new Ataque("tornado", "volador", 300, 5);
-var ataqueAla = new Ataque("ataqueAla", "volador", 300, 5);
-var lanzaAgua = new Ataque("lanzaAgua", "agua", 300, 5);
+var tornado = new Ataque("tornado", "volador", 200, 5);
+var ataqueAla = new Ataque("ataqueAla", "volador", 200, 5);
+var lanzaAgua = new Ataque("lanzaAgua", "agua", 400, 5);
 var burbujas = new Ataque("burbujas", "agua", 300, 5);
-var cantar = new Ataque("cantar", "normal", 300, 5);
-var eco = new Ataque("eco", "volador", 300, 5);
-var pesadilla = new Ataque("pesadilla", "fantasma", 300, 5);
+var cantar = new Ataque("cantar", "normal", 200, 5);
+var eco = new Ataque("eco", "volador", 100, 5);
+var pesadilla = new Ataque("pesadilla", "fantasma", 100, 5);
 var asustar = new Ataque("asustar", "fantasma", 300, 5);
-var rayo = new Ataque("rayo", "normal", 300, 5);
+var rayo = new Ataque("rayo", "normal", 400, 5);
 var especial = new Ataque("especial", "normal", 2000, 5);
-var mentalismo = new Ataque("mentalismo", "fantasma", 300, 5);
-var psiquico = new Ataque("psiquico", "psiquico", 300, 5);
+var mentalismo = new Ataque("mentalismo", "fantasma", 500, 5);
+var psiquico = new Ataque("psiquico", "psiquico", 600, 5);
 
 const listaPokemon = [{
 
@@ -30,7 +30,7 @@ const listaPokemon = [{
             1: psiquico
 
         },
-        propriedades: {
+        propiedades: {
             tipo: "psiquico",
             debilidad: "fantasma",
             vidas: 1000
@@ -47,7 +47,7 @@ const listaPokemon = [{
             0: lanzallamas,
             1: llamarada
         },
-        propriedades: {
+        propiedades: {
             tipo: "fuego",
             debilidad: "agua",
             vidas: 1000
@@ -64,7 +64,7 @@ const listaPokemon = [{
             0: golpePuño,
             1: patada
         },
-        propriedades: {
+        propiedades: {
             tipo: "roca",
             debilidad: "agua",
             vidas: 1000
@@ -81,7 +81,7 @@ const listaPokemon = [{
             0: rayoHielo,
             1: placaje
         },
-        propriedades: {
+        propiedades: {
             tipo: "hielo",
             debilidad: "fuego",
             vidas: 1000
@@ -98,7 +98,7 @@ const listaPokemon = [{
             0: tornado,
             1: ataqueAla
         },
-        propriedades: {
+        propiedades: {
             tipo: "volador",
             debilidad: "hielo",
             vidas: 1000
@@ -115,7 +115,7 @@ const listaPokemon = [{
             0: golpePuño,
             1: patada
         },
-        propriedades: {
+        propiedades: {
             tipo: "normal",
             debilidad: "volador",
             vidas: 1000
@@ -132,7 +132,7 @@ const listaPokemon = [{
             0: lanzaAgua,
             1: burbujas
         },
-        propriedades: {
+        propiedades: {
             tipo: "agua",
             debilidad: "normal",
             vidas: 1000
@@ -149,7 +149,7 @@ const listaPokemon = [{
             0: cantar,
             1: placaje
         },
-        propriedades: {
+        propiedades: {
             tipo: "normal",
             debilidad: "volador",
             vidas: 1000
@@ -166,7 +166,7 @@ const listaPokemon = [{
             0: eco,
             1: ataqueAla
         },
-        propriedades: {
+        propiedades: {
             tipo: "volador",
             debilidad: "hielo",
             vidas: 1000
@@ -183,7 +183,7 @@ const listaPokemon = [{
             0: golpePuño,
             1: placaje
         },
-        propriedades: {
+        propiedades: {
             tipo: "roca",
             debilidad: "agua",
             vidas: 1000
@@ -200,7 +200,7 @@ const listaPokemon = [{
             0: pesadilla,
             1: asustar
         },
-        propriedades: {
+        propiedades: {
             tipo: "fantasma",
             debilidad: "normal",
             vidas: 1000
@@ -217,7 +217,7 @@ const listaPokemon = [{
             0: rayo,
             1: mentalismo
         },
-        propriedades: {
+        propiedades: {
             tipo: "normal",
             debilidad: "volador",
             vidas: 1000
@@ -235,3 +235,6 @@ const enemigo = controlador.pokemonRandom(0, 12);
 
 dibujante.dibujarEnemigo(enemigo);
 dibujante.dibujarJugador(jugador);
+dibujante.dibujarPokemon();
+controlador.configurarBotonesAtaque();
+controlador.ganar();

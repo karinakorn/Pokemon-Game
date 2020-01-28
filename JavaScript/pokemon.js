@@ -3,9 +3,9 @@ class Pokemon {
         this.id = datos.id;
         this.img = datos.img;
         this.ataques = datos.ataques;
-        this.tipo = datos.propriedades.tipo;
-        this.debilidad = datos.propriedades.debilidad;
-        this.vidas = datos.propriedades.vidas;
+        this.tipo = datos.propiedades.tipo;
+        this.debilidad = datos.propiedades.debilidad;
+        this.vidas = datos.propiedades.vidas;
 
     }
 
