@@ -15,7 +15,6 @@ class Controlador {
         return this;
     }
     atacar(numeroDeAtaque) {
-
         jugador.vidas -= enemigo.ataques[numeroDeAtaque].potencia;
         document.querySelector(".player-life-bar").value = jugador.vidas
 
@@ -26,12 +25,10 @@ class Controlador {
         if (jugador.vidas < 1) { alert("player") } else if (enemigo.vidas < 1) {
             alert("enemy")
         }
-
-
         return this;
     }
     ganar = () => {
-        return this;
+        return this
     }
     pokemonRandom = (min, max) => {
         var pokemonRandom = parseInt(Math.random() * (max - min) + min);
