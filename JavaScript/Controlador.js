@@ -28,7 +28,7 @@ class Controlador {
         return this;
     }
     ganar = () => {
-        return this
+        return this;
     }
     pokemonRandom = (min, max) => {
         var pokemonRandom = parseInt(Math.random() * (max - min) + min);
