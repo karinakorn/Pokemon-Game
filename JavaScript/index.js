@@ -237,4 +237,3 @@ dibujante.dibujarEnemigo(enemigo);
 dibujante.dibujarJugador(jugador);
 dibujante.dibujarPokemon();
 controlador.configurarBotonesAtaque();
-controlador.ganar();

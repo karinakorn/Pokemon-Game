@@ -7,27 +7,31 @@ class Controlador {
         var ataque2 = $("#atk2");
         var contexto = this;
 
-        ataque1.click(function() {
+        ataque1.click(() => {
             contexto.atacar(0);
         })
-        ataque2.click(function() {
-            contexto.atacar(1);
-        })
+        ataque2.click(() => contexto.atacar(1))
 
+        return this;
     }
-    atacar = (numeroDeAtaque) => {
-        var ataqueEnemigo = Math.floor(Math.random() * 2)
-        enemigo.vidas -= jugador.ataques[numeroDeAtaque].potencia;
-        jugador.vidas -= enemigo.ataques[numeroDeAtaque].potencia;
-        this.ganar();
+    atacar(numeroDeAtaque) {
 
+        jugador.vidas -= enemigo.ataques[numeroDeAtaque].potencia;
+        document.querySelector(".player-life-bar").value = jugador.vidas
+
+        var ataqueEnemigo = Math.floor(Math.random() * 2)
+        enemigo.vidas -= jugador.ataques[ataqueEnemigo].potencia;
+        document.querySelector(".enemy-life-bar").value = enemigo.vidas
+
+        if (jugador.vidas < 1) { alert("player") } else if (enemigo.vidas < 1) {
+            alert("enemy")
+        }
+
+
+        return this;
     }
     ganar = () => {
-        if (enemigo.vidas <= 0) {
-            return alert("You win");
-        } else if (jugador.vidas <= 0) {
-            return alert("You loose");
-        }
+        return this;
     }
     pokemonRandom = (min, max) => {
         var pokemonRandom = parseInt(Math.random() * (max - min) + min);

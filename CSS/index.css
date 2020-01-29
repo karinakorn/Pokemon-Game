@@ -1,14 +1,26 @@
-body {
-    margin:0px;
+* {
+    user-select: none;
 }
 
-span, a, p, h1, h2, h3, h4, h5, h6{
+body {
+    margin: 0px;
+}
+
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Press Start 2P';
     font-size: 20px;
     color: black;
 }
 
-#menu *{
+#menu * {
     border: 1px solid red;
 }
 
@@ -17,7 +29,7 @@ span, a, p, h1, h2, h3, h4, h5, h6{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
-    height:600px;
+    height: 600px;
     width: 1024px;
     margin: auto;
 }
@@ -26,34 +38,37 @@ span, a, p, h1, h2, h3, h4, h5, h6{
     height: 300px;
     width: 1024px;
     margin: 0px;
-} 
+}
 
 #enemigo div {
     float: right;
 }
+
 #jugador div {
     float: left;
 }
 
 .cardbox {
-/* width: 200px;
+    /* width: 200px;
  height: 80px;*/
- border-radius: 20px;
- /* text-align: center; */
- padding: 20px;
- background-color: lightgrey;
- border-radius: 20px;
- float: none;
+    border-radius: 20px;
+    /* text-align: center; */
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    float: none;
 }
 
 .nombre-pokemon,
 .vida-barra {
     display: block;
 }
+
 .vida-barra {
     margin-top: 10px;
 }
-    
+
+
 /* progress[value]::-webkit-progress-value {
     background-image:
          -webkit-linear-gradient(-45deg, 
@@ -84,16 +99,18 @@ span, a, p, h1, h2, h3, h4, h5, h6{
     position: absolute;
 }
 
- #tablero {
-     position: absolute;
-     display: block;
-     bottom: 20px;
-     left: 600px;
- }
+#tablero {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 600px;
+}
+
 #tablero ul {
     margin: 0px;
     padding: 10px;
 }
+
 #menu li {
     list-style-type: none;
 }
@@ -109,10 +126,10 @@ span, a, p, h1, h2, h3, h4, h5, h6{
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    width: 150px;  
+    width: 150px;
 }
 
-.drop-menu{
+.drop-menu {
     position: absolute;
     bottom: 60px;
     background-color: lightgrey;
@@ -120,15 +137,15 @@ span, a, p, h1, h2, h3, h4, h5, h6{
     display: none;
 }
 
-#menu-pokemon li{
+#menu-pokemon li {
     display: block;
     float: left;
 }
 
-#menu a:hover{
+#menu a:hover {
     background: grey;
 }
 
-.active{
+.active {
     display: inline-block;
 }
