@@ -14,7 +14,7 @@ class Controlador {
 
         return this;
     }
-    atacar(numeroDeAtaque) {
+    atacar(numeroDeAtaque) { //Funcion atacar
         jugador.vidas -= enemigo.ataques[numeroDeAtaque].potencia;
         document.querySelector(".player-life-bar").value = jugador.vidas
 
