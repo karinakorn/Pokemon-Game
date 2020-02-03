@@ -10,26 +10,26 @@ class Controlador {
         ataque1.click(() => {
             contexto.atacar(0);
         })
-        ataque2.click(() => contexto.atacar(1))
+        ataque2.click(() => {
+            contexto.atacar(1);
+        })
 
         return this;
     }
-    atacar(numeroDeAtaque) {
-
+    atacar(numeroDeAtaque) { //Funcion atacar
         jugador.vidas -= enemigo.ataques[numeroDeAtaque].potencia;
         document.querySelector(".player-life-bar").value = jugador.vidas
 
         var ataqueEnemigo = Math.floor(Math.random() * 2)
         enemigo.vidas -= jugador.ataques[ataqueEnemigo].potencia;
+        alert(enemigo.name + " ha atacado con " + enemigo.ataques[ataqueEnemigo].nombre);
         document.querySelector(".enemy-life-bar").value = enemigo.vidas
 
         if (jugador.vidas < 1) {
-            alert("player")
+            alert("You loose")
         } else if (enemigo.vidas < 1) {
-            alert("enemy")
+            alert("You win")
         }
-
-
         return this;
     }
     ganar = () => {
