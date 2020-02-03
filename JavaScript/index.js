@@ -233,6 +233,7 @@ const seleccion = parseInt(prompt("ingrese un numero del 0 al 11"));
 const jugador = new Pokemon(listaPokemon[seleccion]);
 const enemigo = controlador.pokemonRandom(0, 12);
 
+dibujante.borrarPantallaPresentacion();
 dibujante.dibujarEnemigo(enemigo);
 dibujante.dibujarJugador(jugador);
 dibujante.dibujarPokemon();

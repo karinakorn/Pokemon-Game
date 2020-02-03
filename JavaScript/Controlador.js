@@ -23,7 +23,9 @@ class Controlador {
         enemigo.vidas -= jugador.ataques[ataqueEnemigo].potencia;
         document.querySelector(".enemy-life-bar").value = enemigo.vidas
 
-        if (jugador.vidas < 1) { alert("player") } else if (enemigo.vidas < 1) {
+        if (jugador.vidas < 1) {
+            alert("player")
+        } else if (enemigo.vidas < 1) {
             alert("enemy")
         }
 
@@ -41,7 +43,7 @@ class Controlador {
 
 
 
-// VER TEMA RANDOM
+
 
 
 //REVERRR !!!!!!!!!!!!!
@@ -55,31 +57,31 @@ function dropMenu(element, hide = false) {
 
 }
 
-document.getElementById("elegir-pokemon").addEventListener("mouseover", function() {
+document.getElementById("elegir-pokemon").addEventListener("mouseover", function () {
     dropMenu("menu-pokemon");
 });
-document.getElementById("elegir-ataque").addEventListener("mouseover", function() {
+document.getElementById("elegir-ataque").addEventListener("mouseover", function () {
     dropMenu("menu-ataque");
 });
 
 var menupoke, menuataq;
 
-document.getElementById("elegir-pokemon").addEventListener("mouseout", function() {
-    menupoke = setTimeout(function() {
+document.getElementById("elegir-pokemon").addEventListener("mouseout", function () {
+    menupoke = setTimeout(function () {
         dropMenu("menu-pokemon", true);
     }, 1000)
 });
 
-document.getElementById("elegir-ataque").addEventListener("mouseout", function() {
-    menuataq = setTimeout(function() {
+document.getElementById("elegir-ataque").addEventListener("mouseout", function () {
+    menuataq = setTimeout(function () {
         dropMenu("menu-ataque", true);
     }, 1000)
 });
 
-document.getElementById("menu-pokemon").addEventListener("mouseenter", function() {
+document.getElementById("menu-pokemon").addEventListener("mouseenter", function () {
     clearTimeout(menupoke);
 });
-document.getElementById("menu-ataque").addEventListener("mouseenter", function() {
+document.getElementById("menu-ataque").addEventListener("mouseenter", function () {
     clearTimeout(menuataq);
 });
 

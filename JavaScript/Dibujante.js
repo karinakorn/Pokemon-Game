@@ -5,7 +5,7 @@ class Dibujante {
             pokemonDOM.setAttribute('class', 'sprite');
             pokemonDOM.setAttribute('data-pokemon', poke.name);
             pokemonDOM.style.backgroundImage = "url('" + poke.img.front + "')";
-            pokemonDOM.addEventListener('click', function() {});
+            pokemonDOM.addEventListener('click', function () {});
             container.append(pokemonDOM)
         })
     }
@@ -14,6 +14,11 @@ class Dibujante {
     }
     dibujarJugador(pokemon) {
         document.querySelector("#jugador .imagen-pokemon img").setAttribute("src", pokemon.img.back);
+    }
+    borrarPantallaPresentacion() {
+        setTimeout(function () {
+            $('#pantalla-presentacion').hide();
+        }, 3000);
     }
 }
 const container = document.querySelector('#menu-pokemon ul');
