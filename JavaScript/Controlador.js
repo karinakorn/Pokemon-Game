@@ -22,6 +22,7 @@ class Controlador {
 
         var ataqueEnemigo = Math.floor(Math.random() * 2)
         enemigo.vidas -= jugador.ataques[ataqueEnemigo].potencia;
+        alert(enemigo.name + " ha atacado con " + enemigo.ataques[ataqueEnemigo].nombre);
         document.querySelector(".enemy-life-bar").value = enemigo.vidas
 
         if (jugador.vidas < 1) {

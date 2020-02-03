@@ -18,10 +18,16 @@ h6 {
     font-family: 'Press Start 2P';
     font-size: 20px;
     color: black;
+    text-transform: capitalize;
 }
 
 #menu * {
     border: 1px solid red;
+}
+
+li#atk1,
+li#atk2 {
+    padding: 6px;
 }
 
 #main-container {
@@ -125,7 +131,7 @@ h6 {
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
     width: 150px;
 }
 
