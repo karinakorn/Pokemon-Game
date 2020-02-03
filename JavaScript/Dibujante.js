@@ -9,11 +9,18 @@ class Dibujante {
             container.append(pokemonDOM)
         })
     }
+    dibujarNombreAtaque(pokemon) {
+        document.querySelector(".ataque1").innerHTML = pokemon.ataques["0"].nombre;
+        document.querySelector(".ataque2").innerHTML = pokemon.ataques["1"].nombre;
+    }
     dibujarEnemigo(pokemon) {
         document.querySelector("#enemigo .imagen-pokemon img").setAttribute("src", pokemon.img.front);
+        document.querySelector(".nombre-enemy").innerHTML = pokemon.name;
+
     }
     dibujarJugador(pokemon) {
         document.querySelector("#jugador .imagen-pokemon img").setAttribute("src", pokemon.img.back);
+        document.querySelector(".nombre-pokemon").innerHTML = pokemon.name;
     }
 }
 const container = document.querySelector('#menu-pokemon ul');
